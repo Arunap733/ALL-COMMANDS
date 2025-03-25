@@ -74,6 +74,6 @@ REAL TIME ANSIBLE COMMANDS:
 10. Miscellaneous Useful Commands
 	•	ansible-doc -l – List all available modules.
 	•	ansible-doc <module_name> – Show documentation for a specific module.
-	•	ansible-galaxy collection install <collection_name> – Install a collection.
+	•	ansible-galaxy collection install <collection_name> – Install a collection..
 
 ⸻
