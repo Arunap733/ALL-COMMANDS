@@ -72,7 +72,7 @@ REAL TIME GIT COMMANDS:
 10. Other Useful Commands
 	•	git diff – Show changes between commits or working directory.
 	•	git rm <file> – Remove a file from the working directory and stage the deletion.
-	•	git mv <old_name> <new_name> – Rename a file and stage the change.
+	•	git mv <old_name> <new_name> – Rename a file and stage the change..
 
 ⸻
 
