@@ -80,7 +80,7 @@ REAL TIME DOCKER COMMANDS:
 9. Inspecting Containers & Images
 	•	docker inspect <container_id> – Get detailed information about a container.
 	•	docker inspect <image_id> – Get detailed information about an image.
-	•	docker stats – View real-time resource usage of containers.
+	•	docker stats – View real-time resource usage of containers..
 
 ⸻
 
