@@ -1,0 +1,86 @@
+REAL TIME GIT COMMANDS:
+⸻
+
+1. Basic Setup & Configuration
+	•	git config --global user.name "Your Name" – Set your name.
+	•	git config --global user.email "your.email@example.com" – Set your email.
+	•	git config --list – View current Git configuration.
+
+⸻
+
+2. Cloning & Initialization
+	•	git init – Initialize a new local Git repository.
+	•	git clone <repo_url> – Clone an existing repository from GitHub.
+
+⸻
+
+3. Staging & Committing Changes
+	•	git status – Check the status of your working directory.
+	•	git add <file> – Stage a specific file.
+	•	git add . – Stage all modified and new files.
+	•	git commit -m "commit message" – Commit staged changes with a message.
+
+⸻
+
+4. Branching & Merging
+	•	git branch – List all branches.
+	•	git branch <branch_name> – Create a new branch.
+	•	git checkout <branch_name> – Switch to a branch.
+	•	git checkout -b <branch_name> – Create and switch to a new branch.
+	•	git merge <branch_name> – Merge a branch into the current branch.
+	•	git branch -d <branch_name> – Delete a branch.
+
+⸻
+
+5. Pushing & Pulling Changes
+	•	git pull origin <branch_name> – Fetch and merge changes from the remote repository.
+	•	git push origin <branch_name> – Push local commits to the remote repository.
+	•	git push -u origin <branch_name> – Push and set the upstream for a branch.
+
+⸻
+
+6. Viewing History
+	•	git log – View commit history.
+	•	git log --oneline – View a compact, one-line history.
+	•	git show <commit_hash> – Show detailed information about a commit.
+
+⸻
+
+7. Undoing Changes
+	•	git reset <file> – Unstage a file.
+	•	git reset --hard <commit_hash> – Reset to a specific commit and discard changes.
+	•	git revert <commit_hash> – Create a new commit that undoes a previous commit.
+	•	git stash – Temporarily save changes that are not ready to commit.
+	•	git stash pop – Reapply stashed changes.
+
+⸻
+
+8. Working with Remote Repositories
+	•	git remote -v – List remote repositories.
+	•	git remote add origin <repo_url> – Link a remote repository.
+	•	git fetch – Download changes from the remote without applying them.
+
+⸻
+
+9. Tagging
+	•	git tag – List all tags.
+	•	git tag -a <tag_name> -m "tag message" – Create an annotated tag.
+	•	git push origin <tag_name> – Push a tag to the remote repository.
+
+⸻
+
+10. Other Useful Commands
+	•	git diff – Show changes between commits or working directory.
+	•	git rm <file> – Remove a file from the working directory and stage the deletion.
+	•	git mv <old_name> <new_name> – Rename a file and stage the change.
+
+⸻
+
+
+
+
+
+
+
+
+
