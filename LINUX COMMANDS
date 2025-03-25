@@ -1,0 +1,142 @@
+REAL TIME LINUX COMMANDS:
+⸻
+
+1. File & Directory Management
+	•	ls – List files and directories.
+	•	ls -la – List all files (including hidden files) with details.
+	•	cd <directory> – Change directory.
+	•	pwd – Show the current directory.
+	•	mkdir <directory> – Create a new directory.
+	•	rm <file> – Remove a file.
+	•	rm -rf <directory> – Remove a directory and its contents recursively.
+	•	cp <source> <destination> – Copy files and directories.
+	•	mv <source> <destination> – Move/rename files and directories.
+	•	touch <file> – Create an empty file or update the timestamp.
+
+⸻
+
+2. File Viewing & Editing
+	•	cat <file> – View the contents of a file.
+	•	tac <file> – View the contents of a file in reverse.
+	•	more <file> – View a file one page at a time.
+	•	less <file> – Similar to more, but allows backward navigation.
+	•	head -n <number> <file> – View the first n lines of a file.
+	•	tail -n <number> <file> – View the last n lines of a file.
+	•	tail -f <file> – Continuously monitor a file in real time.
+	•	nano <file> – Edit a file using a simple text editor.
+	•	vi <file> – Open a file in the vi editor.
+	•	vim <file> – Open a file in the vim editor.
+
+⸻
+
+3. User & Permission Management
+	•	whoami – Show the current logged-in user.
+	•	id – Display user ID (UID) and group ID (GID).
+	•	su - <user> – Switch to another user.
+	•	sudo <command> – Execute a command with superuser privileges.
+	•	adduser <username> – Add a new user.
+	•	userdel <username> – Delete a user.
+	•	passwd <username> – Change or set a user’s password.
+	•	chown <user>:<group> <file> – Change ownership of a file.
+	•	chmod 755 <file> – Set permissions for a file or directory.
+	•	ls -l – Check file permissions.
+
+⸻
+
+4. Process Management
+	•	ps aux – List all running processes.
+	•	top – Display real-time system resource usage.
+	•	htop – Enhanced version of top with a better interface.
+	•	kill <PID> – Kill a process using its PID.
+	•	kill -9 <PID> – Forcefully kill a process.
+	•	pkill <process_name> – Kill a process by its name.
+	•	bg – Resume a suspended process in the background.
+	•	fg – Bring a background process to the foreground.
+	•	jobs – List background jobs.
+
+⸻
+
+5. Service & System Management
+	•	systemctl status <service> – Check the status of a service.
+	•	systemctl start <service> – Start a service.
+	•	systemctl stop <service> – Stop a service.
+	•	systemctl restart <service> – Restart a service.
+	•	systemctl enable <service> – Enable a service to start at boot.
+	•	systemctl disable <service> – Disable a service from starting at boot.
+	•	journalctl -xe – View system logs.
+
+⸻
+
+6. Disk Usage & Space Management
+	•	df -h – Display disk space usage in a human-readable format.
+	•	du -sh <directory> – Show the size of a directory.
+	•	lsblk – Show information about block devices.
+	•	fdisk -l – List partition tables of all disks.
+	•	mount /dev/sdX /mnt – Mount a device.
+	•	umount /mnt – Unmount a device.
+
+⸻
+
+7. Networking Commands
+	•	ip a – Display IP address and interface information.
+	•	ifconfig – Show network interfaces (deprecated, but still used).
+	•	ping <host> – Test connectivity to a host.
+	•	curl <URL> – Fetch data from a URL.
+	•	wget <URL> – Download a file from a URL.
+	•	scp <source> <destination> – Securely copy files between servers.
+	•	rsync -avz <source> <destination> – Synchronize files between servers.
+	•	netstat -tulnp – Display active network connections and listening ports.
+	•	ss -tulnp – Alternative to netstat for displaying sockets.
+
+⸻
+
+8. Package Management
+
+On Ubuntu/Debian:
+	•	apt update – Update the package index.
+	•	apt upgrade – Upgrade installed packages.
+	•	apt install <package> – Install a new package.
+	•	apt remove <package> – Remove a package.
+	•	apt search <package> – Search for a package.
+
+On CentOS/RHEL:
+	•	yum update – Update all packages.
+	•	yum install <package> – Install a new package.
+	•	yum remove <package> – Remove a package.
+	•	yum list <package> – List package details.
+
+⸻
+
+9. Archive & Compression
+	•	tar -cvf archive.tar <files> – Create a tar archive.
+	•	tar -xvf archive.tar – Extract a tar archive.
+	•	tar -czvf archive.tar.gz <files> – Create a compressed archive.
+	•	tar -xzvf archive.tar.gz – Extract a compressed archive.
+	•	zip -r archive.zip <files> – Create a zip archive.
+	•	unzip archive.zip – Extract a zip archive.
+
+⸻
+
+10. Log Management
+	•	cat /var/log/syslog – View system logs.
+	•	cat /var/log/auth.log – View authentication logs.
+	•	grep "error" /var/log/syslog – Search for errors in logs.
+	•	logrotate – Manage log rotation and cleanup.
+
+⸻
+
+11. Search & Find
+	•	grep "text" <file> – Search for a pattern in a file.
+	•	find /path -name <filename> – Find files by name.
+	•	locate <filename> – Locate a file in the system.
+	•	awk '{print $1}' <file> – Extract and display a specific column.
+	•	sed 's/old/new/g' <file> – Replace text in a file.
+
+⸻
+
+12. SSH & Remote Access
+	•	ssh user@hostname – Connect to a remote server.
+	•	scp <file> user@hostname:/path/to/destination – Copy files to a remote server.
+	•	rsync -avz <file> user@hostname:/path – Synchronize files with a remote server.
+
+⸻
