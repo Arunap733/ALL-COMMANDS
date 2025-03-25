@@ -1,0 +1,93 @@
+REAL TIME DOCKER COMMANDS:
+⸻
+
+1. Docker Setup & Information
+	•	docker --version – Check Docker version.
+	•	docker info – Get system-wide information about Docker.
+	•	docker system df – Show Docker disk usage.
+
+⸻
+
+2. Working with Images
+	•	docker images – List all local images.
+	•	docker pull <image_name> – Pull an image from Docker Hub.
+	•	docker build -t <image_name>:<tag> . – Build an image from a Dockerfile.
+	•	docker tag <image_id> <repository>:<tag> – Tag an image for pushing to a registry.
+	•	docker push <repository>:<tag> – Push an image to Docker Hub or any registry.
+	•	docker rmi <image_id> – Remove an image.
+
+⸻
+
+3. Container Lifecycle Management
+	•	docker ps – List running containers.
+	•	docker ps -a – List all containers (including stopped ones).
+	•	docker run -d -p 8080:80 --name my_container <image_name> – Run a container in detached mode with port mapping.
+	•	docker start <container_id> – Start a stopped container.
+	•	docker stop <container_id> – Stop a running container.
+	•	docker restart <container_id> – Restart a container.
+	•	docker rm <container_id> – Remove a container.
+	•	docker kill <container_id> – Forcefully stop a container.
+
+⸻
+
+4. Container Access & Management
+	•	docker exec -it <container_id> /bin/bash – Access a running container’s shell.
+	•	docker attach <container_id> – Attach to a running container.
+	•	docker logs <container_id> – View logs of a container.
+	•	docker logs -f <container_id> – Follow logs in real-time.
+	•	docker cp <container_id>:/path/to/file /local/path – Copy files from a container to the local system.
+	•	docker cp /local/path <container_id>:/path/to/destination – Copy files from local system to the container.
+
+⸻
+
+5. Docker Volume Management
+	•	docker volume ls – List all volumes.
+	•	docker volume create <volume_name> – Create a volume.
+	•	docker volume rm <volume_name> – Remove a volume.
+	•	docker run -d -v <volume_name>:/app/data <image_name> – Attach a volume to a container.
+	•	docker volume inspect <volume_name> – Get details of a volume.
+
+⸻
+
+6. Docker Network Management
+	•	docker network ls – List all networks.
+	•	docker network create <network_name> – Create a new network.
+	•	docker network connect <network_name> <container_name> – Connect a container to a network.
+	•	docker network disconnect <network_name> <container_name> – Disconnect a container from a network.
+	•	docker network inspect <network_name> – View network details.
+
+⸻
+
+7. Docker Compose
+	•	docker-compose up – Start services defined in docker-compose.yml.
+	•	docker-compose up -d – Start services in detached mode.
+	•	docker-compose down – Stop and remove containers, networks, and volumes.
+	•	docker-compose ps – List containers managed by docker-compose.
+	•	docker-compose logs – Show logs for all services.
+	•	docker-compose restart – Restart all services.
+
+⸻
+
+8. Managing Docker System
+	•	docker system prune – Remove unused data (containers, networks, images, etc.).
+	•	docker system prune -a – Remove all unused images, containers, and networks.
+	•	docker stop $(docker ps -q) – Stop all running containers.
+	•	docker rm $(docker ps -aq) – Remove all containers.
+	•	docker rmi $(docker images -q) – Remove all unused images.
+
+⸻
+
+9. Inspecting Containers & Images
+	•	docker inspect <container_id> – Get detailed information about a container.
+	•	docker inspect <image_id> – Get detailed information about an image.
+	•	docker stats – View real-time resource usage of containers.
+
+⸻
+
+10. Other Useful Docker Commands
+	•	docker commit <container_id> <new_image_name> – Create an image from a container.
+	•	docker history <image_name> – View history of an image.
+	•	docker top <container_id> – Show running processes in a container.
+	•	docker diff <container_id> – Show changes in the filesystem of a container.
+
+⸻
