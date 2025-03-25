@@ -137,6 +137,6 @@ On CentOS/RHEL:
 12. SSH & Remote Access
 	•	ssh user@hostname – Connect to a remote server.
 	•	scp <file> user@hostname:/path/to/destination – Copy files to a remote server.
-	•	rsync -avz <file> user@hostname:/path – Synchronize files with a remote server.
+	•	rsync -avz <file> user@hostname:/path – Synchronize files with a remote server..
 
 ⸻
