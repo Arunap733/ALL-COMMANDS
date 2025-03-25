@@ -1,0 +1,79 @@
+REAL TIME ANSIBLE COMMANDS:
+⸻
+
+1. Ansible Configuration & Setup
+	•	ansible --version – Check Ansible version.
+	•	ansible-config list – Show available configuration options.
+	•	ansible-inventory --list -y – Display the inventory in YAML format.
+
+⸻
+
+2. Inventory Management
+	•	ansible all -m ping – Test connectivity to all hosts.
+	•	ansible -i inventory.ini all --list-hosts – List all hosts in the inventory.
+	•	ansible -i inventory.ini group_name -m ping – Ping a specific group of servers.
+	•	ansible-inventory -i inventory.ini --graph – Visualize inventory hierarchy.
+
+⸻
+
+3. Ad-Hoc Commands
+	•	ansible all -m command -a "uptime" – Run a command on all hosts.
+	•	ansible all -m shell -a "df -h" – Run a shell command.
+	•	ansible all -m copy -a "src=/path/to/file dest=/tmp/file" – Copy a file to remote servers.
+	•	ansible all -m file -a "path=/tmp/testfile state=absent" – Delete a file on remote servers.
+	•	ansible all -m yum -a "name=httpd state=present" – Install a package using YUM.
+	•	ansible all -m service -a "name=httpd state=started" – Start/stop/restart a service.
+
+⸻
+
+4. Working with Playbooks
+	•	ansible-playbook playbook.yml – Run a playbook.
+	•	ansible-playbook -i inventory.ini playbook.yml – Run a playbook with a specific inventory.
+	•	ansible-playbook -e "var=value" playbook.yml – Pass extra variables to the playbook.
+	•	ansible-playbook playbook.yml --check – Run a dry run (simulation).
+	•	ansible-playbook playbook.yml --tags "tag_name" – Run tasks with specific tags.
+
+⸻
+
+5. Debugging & Validation
+	•	ansible-playbook playbook.yml --syntax-check – Check syntax errors in a playbook.
+	•	ansible-playbook -i inventory.ini playbook.yml -vvvv – Run with verbose output (useful for debugging).
+	•	ansible -m debug -a "msg='Hello World'" localhost – Run a debug task.
+
+⸻
+
+6. Managing Roles
+	•	ansible-galaxy init role_name – Create a new Ansible role.
+	•	ansible-galaxy install role_name – Install a role from Ansible Galaxy.
+	•	ansible-galaxy list – List installed roles.
+
+⸻
+
+7. Managing Variables and Facts
+	•	ansible all -m setup – Gather and display system facts.
+	•	ansible all -m setup -a "filter=ansible_distribution*" – Filter and display specific facts.
+	•	ansible-playbook -e "myvar=value" playbook.yml – Pass extra variables to a playbook.
+
+⸻
+
+8. Managing Hosts and Groups
+	•	ansible-playbook playbook.yml --limit "group_name" – Run playbook on a specific group.
+	•	ansible-playbook playbook.yml --limit "hostname" – Run playbook on a specific host.
+
+⸻
+
+9. Vault (Handling Secrets)
+	•	ansible-vault create secret.yml – Create an encrypted file.
+	•	ansible-vault edit secret.yml – Edit an encrypted file.
+	•	ansible-vault encrypt secret.yml – Encrypt an existing file.
+	•	ansible-vault decrypt secret.yml – Decrypt a file.
+	•	ansible-playbook --ask-vault-pass playbook.yml – Run a playbook with a vaulted file.
+
+⸻
+
+10. Miscellaneous Useful Commands
+	•	ansible-doc -l – List all available modules.
+	•	ansible-doc <module_name> – Show documentation for a specific module.
+	•	ansible-galaxy collection install <collection_name> – Install a collection.
+
+⸻
